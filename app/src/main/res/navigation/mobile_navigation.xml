@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_flashcards">
+
+    <fragment
+        android:id="@+id/nav_flashcards"
+        android:name="com.zyqunix.mywig.ui.flashcard.FlashcardFragment"
+        android:label="@string/menu_flashcard"
+        tools:layout="@layout/fragment_flashcard" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.zyqunix.mywig.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.zyqunix.mywig.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MyWig</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_flashcard">Flascards</string>
+
+
+    <string name="score_placeholder">Score: %1$d</string>
+    <string name="high_score_placeholder">High Score: %1$d</string>
+    <string name="add_answer">Add Answer</string>
+    <string name="question_header">Question:</string>
+    <string name="answer_header">Answer:</string>
+    <string name="add_question">Add Question</string>
+
+
+
+    <string name="underlined_text">
+        <strong><u>Flashcard Quiz</u></strong>
+    </string>
+
+    <string name="flashcard_added">Flashcard added!</string>
+    <string name="flashcard_input_error">Please enter both question and answer.</string>
+    <string name="flashcard_no_cards">Please add flashcards.</string>
+    <string name="flashcard_correct_score">Correct! Score: %1$d</string>
+    <string name="flashcard_incorrect_answer">Incorrect! The correct answer was: %1$s</string>
+    <string name="enter_answer">Enter answer</string>
+    <string name="check_answer">Check Answer</string>
+    <string name="next_question">Next Question</string>
+    <string name="reset_quiz">Reset Quiz</string>
+    <string name="high_score">High Score:</string>
+    <string name="mywig">MyWig</string>
+</resources>

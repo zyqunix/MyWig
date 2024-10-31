@@ -1,0 +1,21 @@
+<resources>
+    <!-- Primary Colors for Night Mode -->
+    <color name="purple_200">#303030</color>
+    <color name="purple_500">#505050</color>
+    <color name="purple_700">#808080</color>
+    <color name="black">#E1E1E2</color>
+
+    <!-- Secondary Colors for Night Mode -->
+    <color name="teal_200">#A3A4A6</color>
+    <color name="teal_700">#6F6F73</color>
+
+    <!-- Gray Colors for Night Mode -->
+    <color name="gray_300">#9C009C</color>
+    <color name="gray_500">#505050</color>
+    <color name="gray_700">#303030</color>
+
+    <!-- Additional Colors -->
+    <color name="white">#000000</color>
+    <color name="red">#F44336</color>
+    <color name="blue">#2196F3</color>
+</resources>

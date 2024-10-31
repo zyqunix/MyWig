@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_700"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gray_700"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/underlined_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/underlined_text"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_w300" />
+
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_header"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:fontFamily="@font/poppins_w300" />
+
+        <EditText
+            android:id="@+id/questionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_question"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_w300" />
+
+        <TextView
+            android:id="@+id/answerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answer_header"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_w300" />
+
+        <EditText
+            android:id="@+id/answerEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_answer"
+            android:autofillHints="name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:inputType="text"
+            android:fontFamily="@font/poppins_w300" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_answer"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_w300" />
+
+        <Button
+            android:id="@+id/checkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_answer"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins_w300" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next_question"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_w300" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_quiz"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_w300" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_w300" />
+
+        <TextView
+            android:id="@+id/highScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high_score"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/poppins_w300" />
+    </LinearLayout>
+</ScrollView>

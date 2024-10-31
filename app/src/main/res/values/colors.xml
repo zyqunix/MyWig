@@ -1,0 +1,25 @@
+<resources>
+    <!-- Primary Colors -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#6200EE</color>
+    <color name="black">#000000</color>
+
+    <color name="purple_dark">#7B41AD</color>
+    <color name="purple_light">#A141AD</color>
+
+    <!-- Secondary Colors -->
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="light_blue">#5A91B9</color>
+
+    <!-- Gray Colors -->
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_700">#616161</color>
+
+    <!-- Additional Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="red">#F44336</color>
+    <color name="blue">#2196F3</color>
+</resources>

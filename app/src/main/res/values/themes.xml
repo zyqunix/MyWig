@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MyWig" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary and Secondary brand colors updated to gray tones. -->
+        <item name="colorPrimary">@color/gray_500</item> <!-- Medium Gray -->
+        <item name="colorPrimaryVariant">@color/gray_700</item> <!-- Dark Gray -->
+        <item name="colorOnPrimary">@color/white</item> <!-- White text on gray -->
+
+        <item name="colorSecondary">@color/gray_300</item> <!-- Light Gray -->
+        <item name="colorSecondaryVariant">@color/gray_500</item> <!-- Medium Gray -->
+        <item name="colorOnSecondary">@color/white</item> <!-- White text on secondary -->
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.MyWig.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyWig.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyWig.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

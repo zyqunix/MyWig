@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyWig" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#616161</item> <!-- Medium Gray -->
+        <item name="colorPrimaryVariant">#424242</item> <!-- Darker Gray -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White text on gray -->
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#757575</item> <!-- Light Gray -->
+        <item name="colorSecondaryVariant">#9E9E9E</item> <!-- Lighter Gray -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- White text on secondary -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

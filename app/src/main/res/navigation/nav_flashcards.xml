@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_flashcards"
+    app:startDestination="@id/flashcardFragment">
+
+    <fragment
+        android:id="@+id/flashcardFragment"
+        android:name="com.zyqunix.mywig.ui.flashcard.FlashcardFragment"
+        android:label="@string/menu_flashcard"
+        tools:layout="@layout/fragment_flashcard" />
+</navigation>
