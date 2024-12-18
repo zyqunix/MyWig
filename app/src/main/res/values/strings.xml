@@ -10,12 +10,12 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_flashcard">Flascards</string>
+    <string name="menu_flashcard">Flashcards</string>
 
 
     <string name="score_placeholder">Score: %1$d</string>
     <string name="high_score_placeholder">High Score: %1$d</string>
-    <string name="add_answer">Add Answer</string>
+    <string name="add_answer">Add Card</string>
     <string name="question_header">Question:</string>
     <string name="answer_header">Answer:</string>
     <string name="add_question">Add Question</string>
@@ -37,4 +37,5 @@
     <string name="reset_quiz">Reset Quiz</string>
     <string name="high_score">High Score:</string>
     <string name="mywig">MyWig</string>
+    <string name="flashcards">Flashcards</string>
 </resources>

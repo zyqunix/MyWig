@@ -11,17 +11,8 @@
         android:background="@color/gray_700"
         android:padding="16dp">
 
-        <TextView
-            android:id="@+id/underlined_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/underlined_text"
-            android:textSize="36sp"
-            android:textColor="@android:color/white"
-            android:fontFamily="@font/poppins_w300" />
 
         <TextView
-            android:id="@+id/questionTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_header"
@@ -45,15 +36,25 @@
             android:fontFamily="@font/poppins_w300" />
 
         <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_w300" />
+
+
+        <TextView
             android:id="@+id/answerTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/answer_header"
-            android:textSize="24sp"
-            android:textColor="@android:color/white"
-            android:padding="10dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_w300" />
+            android:fontFamily="@font/poppins_w300"
+            android:text="@string/answer_header"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/answerEditText"
@@ -111,9 +112,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/reset_quiz"
-            android:background="@drawable/rounded_button"
+            android:background="@drawable/rounded_red_button"
             android:textColor="@android:color/white"
-            android:padding="10dp"
+            android:padding="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginTop="10dp"
@@ -123,11 +124,10 @@
             android:id="@+id/scoreTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textColor="@android:color/white"
-            android:padding="10dp"
+            android:text=""
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins_w300" />
@@ -141,6 +141,7 @@
             android:textColor="@android:color/white"
             android:gravity="center"
             android:layout_marginStart="5dp"
-            android:fontFamily="@font/poppins_w300" />
+            android:fontFamily="@font/poppins_w300"
+            />
     </LinearLayout>
 </ScrollView>

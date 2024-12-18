@@ -92,7 +92,7 @@ class FlashcardFragment : Fragment() {
             if (userAnswer == correctAnswer) {
                 score++
                 binding.scoreTextView.text = getString(R.string.flashcard_correct_score, score)
-            } else {
+            } else if (userAnswer.isNotEmpty() && correctAnswer.isNotEmpty()) {
                 binding.scoreTextView.text = getString(R.string.flashcard_incorrect_answer, correctAnswer)
             }
         }

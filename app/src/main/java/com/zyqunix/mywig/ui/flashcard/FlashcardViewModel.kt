@@ -6,10 +6,7 @@ import androidx.lifecycle.ViewModel
 import android.content.Context
 import android.widget.Toast
 
-class FlashcardViewModel(context: Context) : ViewModel() {
-
-    private val sharedPreferences = context.getSharedPreferences("FlashcardPrefs", Context.MODE_PRIVATE)
-
+class FlashcardViewModel : ViewModel() {
     private val _currentQuestion = MutableLiveData<String>()
     val currentQuestion: LiveData<String> get() = _currentQuestion
 
@@ -17,14 +14,13 @@ class FlashcardViewModel(context: Context) : ViewModel() {
     val score: LiveData<Int> get() = _score
 
     private val _highScore = MutableLiveData<Int>()
-    val highScore: LiveData<Int> get() = _highScore
 
     private var flashcards: MutableList<Pair<String, String>> = mutableListOf()
     private var currentIndex = 0
 
     init {
         _score.value = 0
-        _highScore.value = sharedPreferences.getInt("HIGH_SCORE", 0) // Load saved high score
+        _highScore.value = 0
         showNextQuestion()
     }
 
@@ -32,7 +28,7 @@ class FlashcardViewModel(context: Context) : ViewModel() {
         if (currentIndex < flashcards.size) {
             _currentQuestion.value = flashcards[currentIndex].first
         } else {
-            _currentQuestion.value = "No more questions!" // Handle end of flashcards
+            _currentQuestion.value = "No more questions!"
         }
     }
 
@@ -42,21 +38,22 @@ class FlashcardViewModel(context: Context) : ViewModel() {
             if (userAnswer.equals(correctAnswer, ignoreCase = true)) {
                 _score.value = (_score.value ?: 0) + 1
                 Toast.makeText(context, "Correct!", Toast.LENGTH_SHORT).show()
+                currentIndex++
             } else {
                 _score.value = (_score.value ?: 0) - 1
                 Toast.makeText(context, "Incorrect! Try Again!", Toast.LENGTH_SHORT).show()
             }
-            currentIndex++ // Move to next question after checking
             showNextQuestion()
         }
     }
 
     fun resetQuiz() {
-        updateHighScore() // Update high score when quiz is reset
+        updateHighScore()
         _score.value = 0
         currentIndex = 0
         showNextQuestion()
     }
+
 
     fun addFlashcard(question: String, answer: String) {
         flashcards.add(Pair(question, answer))
@@ -66,8 +63,6 @@ class FlashcardViewModel(context: Context) : ViewModel() {
         val currentScore = _score.value ?: 0
         if (currentScore > (_highScore.value ?: 0)) {
             _highScore.value = currentScore
-            // Save the new high score in SharedPreferences
-            sharedPreferences.edit().putInt("HIGH_SCORE", currentScore).apply()
         }
     }
 }
