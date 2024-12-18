@@ -30,8 +30,9 @@
     <string name="flashcard_input_error">Please enter both question and answer.</string>
     <string name="flashcard_no_cards">Please add flashcards.</string>
     <string name="flashcard_correct_score">Correct! Score: %1$d</string>
-    <string name="flashcard_incorrect_answer">Incorrect! The correct answer was: %1$s</string>
-    <string name="enter_answer">Enter answer</string>
+    <string name="flashcard_incorrect_answer">Incorrect! Try again!</string>
+    <string name="flashcard_empty_answer">Add an answer!</string>
+    <string name="enter_answer">Enter Answer</string>
     <string name="check_answer">Check Answer</string>
     <string name="next_question">Next Question</string>
     <string name="reset_quiz">Reset Quiz</string>

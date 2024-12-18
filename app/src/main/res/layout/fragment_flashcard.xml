@@ -18,8 +18,11 @@
             android:text="@string/question_header"
             android:textSize="24sp"
             android:textColor="@android:color/white"
-            android:padding="10dp"
-            android:fontFamily="@font/poppins_w300" />
+            android:fontFamily="@font/poppins_w300"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
 
         <EditText
             android:id="@+id/questionEditText"
@@ -33,7 +36,10 @@
             android:background="@drawable/rounded_edittext"
             android:padding="10dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/poppins_w300" />
+            android:fontFamily="@font/poppins_w300"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
 
         <TextView
             android:id="@+id/questionTextView"
@@ -43,7 +49,10 @@
             android:text=""
             android:textSize="24sp"
             android:textColor="@android:color/white"
-            android:fontFamily="@font/poppins_w300" />
+            android:fontFamily="@font/poppins_w300"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
 
 
         <TextView
@@ -54,7 +63,10 @@
             android:fontFamily="@font/poppins_w300"
             android:text="@string/answer_header"
             android:textColor="@android:color/white"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
 
         <EditText
             android:id="@+id/answerEditText"
@@ -66,7 +78,10 @@
             android:textColor="@color/white"
             android:background="@drawable/rounded_edittext"
             android:padding="10dp"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:inputType="text"
             android:fontFamily="@font/poppins_w300" />
 

@@ -60,20 +60,32 @@ class FlashcardFragment : Fragment() {
             val jsonObject = flashcard.toJson()
             jsonArray.put(jsonObject)
         }
-        requireContext().openFileOutput(jsonFile, 0).use { it.write(jsonArray.toString().toByteArray()) }
+
+        val externalDir = File(requireContext().getExternalFilesDir(null), "data")
+        if (!externalDir.exists()) {
+            externalDir.mkdirs()
+        }
+
+        val file = File(externalDir, jsonFile)
+        file.writeText(jsonArray.toString())
     }
 
     private fun loadFlashcards() {
-        val file = File(requireContext().filesDir, jsonFile)
+        val externalDir = File(requireContext().getExternalFilesDir(null), "data")
+        val file = File(externalDir, jsonFile)
         if (file.exists()) {
             val jsonArray = JSONArray(file.readText())
             for (i in 0 until jsonArray.length()) {
                 val jsonObject = jsonArray.getJSONObject(i)
-                flashcards.add(Flashcard(jsonObject.getString("question"), jsonObject.getString("answer")))
+                flashcards.add(
+                    Flashcard(
+                        jsonObject.getString("question"),
+                        jsonObject.getString("answer")
+                    )
+                )
             }
         }
     }
-
     private fun showNextQuestion() {
         if (flashcards.isNotEmpty()) {
             currentCardIndex = (currentCardIndex + 1) % flashcards.size
@@ -92,8 +104,10 @@ class FlashcardFragment : Fragment() {
             if (userAnswer == correctAnswer) {
                 score++
                 binding.scoreTextView.text = getString(R.string.flashcard_correct_score, score)
-            } else if (userAnswer.isNotEmpty() && correctAnswer.isNotEmpty()) {
-                binding.scoreTextView.text = getString(R.string.flashcard_incorrect_answer, correctAnswer)
+            } else if (correctAnswer.isEmpty()) {
+                binding.scoreTextView.text = getString(R.string.flashcard_empty_answer)
+            } else {
+                binding.scoreTextView.text = getString(R.string.flashcard_incorrect_answer)
             }
         }
     }
